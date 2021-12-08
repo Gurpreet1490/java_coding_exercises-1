@@ -1,5 +1,6 @@
 package com.techreturners.exercise001;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class Exercise001 {
@@ -12,8 +13,9 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        double addingVat = originalPrice + (originalPrice * vatRate) / 100;
-        return Math.round((addingVat * 100)/100);
+        double result = originalPrice + (originalPrice * vatRate) / 100;
+        DecimalFormat df = new DecimalFormat("0.00");
+        return new Double(df.format(result));
     }
 
     public String reverse(String sentence) {
