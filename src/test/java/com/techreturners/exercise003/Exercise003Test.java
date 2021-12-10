@@ -2,7 +2,7 @@ package com.techreturners.exercise003;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.Ignore;
+
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,7 +23,7 @@ public class Exercise003Test {
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    //@Ignore("You can remove this @ignore annotation to run the test")
+
     @Test
     public void checkGetIceCreamCodeForMangoSorbet() {
         String iceCreamFlavour = "Mango Sorbet";
@@ -32,7 +32,7 @@ public class Exercise003Test {
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    //@Ignore("You can remove this @ignore annotation to run the test")
+
     @Test
     public void checkGetIceCreamCodeForRaspberryRipple() {
         String iceCreamFlavour = "Raspberry Ripple";
@@ -41,7 +41,7 @@ public class Exercise003Test {
         assertEquals(expected, ex003.getIceCreamCode(iceCreamFlavour));
     }
 
-    //@Ignore("You can remove this @ignore annotation to run the test")
+
     @Test
     public void checkPickMultipleIceCreamFlavours() {
 
@@ -49,6 +49,7 @@ public class Exercise003Test {
 
         assertEquals(expected, ex003.iceCreamFlavours());
     }
+
     //additional test for Vanilla
     @Test
     public void checkGetIceCreamCodeForVanilla() {
