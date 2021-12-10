@@ -28,8 +28,8 @@ public class Exercise001 {
 
     public int countLinuxUsers(List<User> users) {
         int countLinux = 0;
-        for (User myOs : users){
-            if (myOs.getType().equals("Linux")){
+        for (User userOs : users){
+            if (userOs.getType().equals("Linux")){
                 countLinux += 1;
             }
         }
