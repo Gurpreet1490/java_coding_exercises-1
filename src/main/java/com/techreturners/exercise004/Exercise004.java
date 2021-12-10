@@ -7,12 +7,12 @@ public class Exercise004 {
     final int INCREMENT_SECONDS = 1000000000;
     private LocalDateTime localDateTime;
 
-    public Exercise004(LocalDate date) {
-        this.localDateTime = date.atStartOfDay();
-    }
-
     public Exercise004(LocalDateTime dateTime) {
         this.localDateTime = dateTime;
+    }
+
+    public Exercise004(LocalDate date) {
+        this.localDateTime = date.atStartOfDay();
     }
 
     public LocalDateTime getDateTime() {
