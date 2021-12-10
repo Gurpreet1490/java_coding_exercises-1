@@ -38,6 +38,14 @@ public class Exercise004Test {
         assertEquals(expected, ex004.getDateTime());
     }
 
+    //additional test
+    @Test
+    public void checkGetDateTimeWhenBothDateAndTimeIsSpecified2() {
 
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(2028, Month.DECEMBER, 10, 05, 22, 0, 0));
+        LocalDateTime expected = LocalDateTime.of(2060, Month.AUGUST, 18, 07, 8, 40);
+
+        assertEquals(expected, ex004.getDateTime());
+    }
 
 }
