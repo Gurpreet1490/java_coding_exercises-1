@@ -15,7 +15,7 @@ public class Exercise001 {
     public double addVat(double originalPrice, double vatRate) {
         double result = originalPrice + (originalPrice * vatRate) / 100;
         DecimalFormat df = new DecimalFormat("0.00");
-        return new Double(df.format(result));
+        return Double.parseDouble(df.format(result));
     }
 
     public String reverse(String sentence) {
