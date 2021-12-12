@@ -8,7 +8,7 @@ public class Exercise003 {
             if(flavours[i].equals(iceCreamFlavour))
                 return i;
         }
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Ice cream flavour not found");
     }
 
     String[] iceCreamFlavours() {
